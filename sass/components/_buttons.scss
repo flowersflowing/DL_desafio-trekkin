@@ -2,6 +2,8 @@
     background-color: $ball-blue;
     border: none;
     color: $white;
+    font-family: $opensans;
+    font-size: $small;
 }
 
 .navbar__button {
@@ -11,4 +13,15 @@
 .precios__button {
     width: 220px;
     height: 30px;
+}
+
+.button:hover {
+    background-color: $blue-lagoon;
+    transition: all 0.3s cubic-bezier(0, 0, 1, 1);
+}
+
+.button:focus {
+    background-color: $silver-chalice;
+    outline: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 1, 1);
 }

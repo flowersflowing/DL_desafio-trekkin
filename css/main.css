@@ -1,9 +1,44 @@
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+* {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 35px;
 }
 
 .row {
@@ -267,10 +302,16 @@ img {
   width: 100%;
 }
 
+.container__card:hover {
+  transition: all 0.3s cubic-bezier(0, 0, 1, 1);
+}
+
 .button {
   background-color: #2ab7ca;
   border: none;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .navbar__button {
@@ -280,6 +321,17 @@ img {
 .precios__button {
   width: 220px;
   height: 30px;
+}
+
+.button:hover {
+  background-color: #b1e4eb;
+  transition: all 0.3s cubic-bezier(0, 0, 1, 1);
+}
+
+.button:focus {
+  background-color: #aeacaf;
+  outline: 0;
+  transition: all 0.3s cubic-bezier(0, 0, 1, 1);
 }
 
 .container__card {
