@@ -1,0 +1,16 @@
+.footer {
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: $raising-black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__elements {
+    color: $silver-chalice;
+}
+
+.footer__elements--left {
+    display: flex;
+}
