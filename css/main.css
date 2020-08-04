@@ -232,6 +232,8 @@ img {
 .navbar__li {
   display: inline;
   margin: 0.4em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 .navbar__ul {
