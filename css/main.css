@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 .row {
   display: grid;
   grid-template-columns: repeat(12, fr);
@@ -210,21 +218,29 @@
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 2em;
 }
 
 .navbar__elements {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .navbar__li {
   display: inline;
+  margin: 0.4em;
+}
+
+.navbar__ul {
+  padding-left: 0.4em;
 }
 
 .footer {
   margin: 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 2em 2em;
   background-color: #221d23;
   display: flex;
   justify-content: space-between;
@@ -232,6 +248,9 @@
 
 .footer__elements {
   color: #aeacaf;
+  margin: 0.4em;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
 }
 
 .footer__elements--left {

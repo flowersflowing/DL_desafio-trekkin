@@ -14,17 +14,23 @@
 <body>
     <!-- navigation / falta el toggle wrap-->
     <nav class="navbar">
-        <img src="images/Logo.svg" alt="logo">
+        <object data="images/Logo.svg" type="images/svg+xml">
+            <img src="images/Logo.svg" alt="logo">            
+        </object>
         <div class="navbar__elements">
-            <ul class="navbar__elements--left">
-                <li class="navbar__li">Acerca de</li>
-                <li class="navbar__li">Características</li>
-                <li class="navbar__li">Precios</li>
-            </ul>
-            <ul class="navbar__elements--right">
-                <li class="navbar__li">Iniciar Sesión</li>
-                <li class="navbar__li"><button class="button navbar__button">Regístrate</button></li>
-            </ul>
+            <div class="navbar__elements--left">
+                <ul class="navbar__ul">
+                    <li class="navbar__li">Acerca de</li>
+                    <li class="navbar__li">Características</li>
+                    <li class="navbar__li">Precios</li>
+                </ul>                
+            </div>
+            <div class="navbar__elements--right">
+                <ul class="navbar__ul">
+                    <li class="navbar__li">Iniciar Sesión</li>
+                    <li class="navbar__li"><button class="button navbar__button">Regístrate</button></li>
+                </ul>                
+            </div>
         </div>
     </nav>
     <!-- main con sections y articles-->
