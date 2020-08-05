@@ -9,12 +9,12 @@
   font-size: 16px;
 }
 
-@keyframes opacity {
+@keyframes sombreado {
   0% {
-    opacity: 0;
+    box-shadow: 0;
   }
   100% {
-    opacity: 1;
+    box-shadow: 1;
   }
 }
 * {
@@ -38,7 +38,12 @@ h3 {
 }
 
 h4 {
-  font-size: 35px;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 2em;
 }
 
 .row {
@@ -250,6 +255,12 @@ h4 {
   width: 100%;
 }
 
+.header__text {
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -302,8 +313,27 @@ h4 {
   width: 100%;
 }
 
+#caracteristicas__title {
+  text-align: center;
+}
+
+#precios__title {
+  color: #fff;
+  text-align: center;
+}
+
+.svg__graph {
+  display: inline-block;
+}
+
+.caracteristicas__text {
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+}
+
 .container__card:hover {
-  transition: all 0.3s cubic-bezier(0, 0, 1, 1);
+  animation-name: sombreado;
 }
 
 .button {
