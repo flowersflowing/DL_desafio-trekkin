@@ -5,12 +5,17 @@
     }
 }
 
+html, body {
+    width: 100%;
+    overflow: auto;
+}
+
 * {
     font-family: $raleway;
     font-size: $medium;
 }
 
-@keyframes sombreado {
-    0% { box-shadow: 0; }
-    100% { box-shadow: 1; }
+@keyframes mover {
+    0% { margin-left: 0; }
+    100% { margin-left: 1em; }
 }

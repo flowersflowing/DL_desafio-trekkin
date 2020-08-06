@@ -1,8 +1,91 @@
-// Quizás dar un padding o margin
+.container {
+    margin: 0 auto 0 auto;
+    padding: auto;
+}
+
+@media only screen and (min-width: 200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
 
 .row {
     display: grid;
-    grid-template-columns: repeat(12, fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media only screen and (min-width: 200px) {
+    .col-xxs-12 {
+        grid-column: span 12;
+    }
+
+    .col-xxs-11 {
+        grid-column: span 11;
+    }
+
+    .col-xxs-10 {
+        grid-column: span 10;
+    }
+
+    .col-xxs-9 {
+        grid-column: span 9;
+    }
+
+    .col-xxs-8 {
+        grid-column: span 8;
+    }
+
+    .col-xxs-7 {
+        grid-column: span 7;
+    }
+
+    .col-xxs-6 {
+        grid-column: span 6;
+    }
+
+    .col-xxs-5 {
+        grid-column: span 5;
+    }
+
+    .col-xxs-4 {
+        grid-column: span 4;
+    }
+
+    .col-xxs-3 {
+        grid-column: span 3;
+    }
+
+    .col-xxs-2 {
+        grid-column: span 2;
+    }
+
+    .col-xxs-1 {
+        grid-column: span 1;
+    } 
 }
 
 @media only screen and (min-width: 576px) {

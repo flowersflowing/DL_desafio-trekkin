@@ -8,9 +8,12 @@
 
 #caracteristicas__title {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 2em;
 }
 
 #precios__title {
+    padding-top: 5em;
     color: $white;
     text-align: center;
 }
@@ -19,16 +22,21 @@
     display: inline-block;
 }
 
+.svg__animation {
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+}
+
 .caracteristicas__text {
     display: inline-block;
-    width: 400px;
-    height: 100px;
+    // @include relative-converter(width, rem, 400px, 16);
+    // height: 100px;
 }
 
-.container__card:hover {
-    animation-name: sombreado;
-}
-
-// .container__card:hover {
-//     transition: all 0.3s cubic-bezier(0, 0, 1, 1);
+// .container__card {
+//     margin
 // }

@@ -1,13 +1,30 @@
 .header {
+    display: flex;
+    position: relative;
     background-image: url(../images/bg-hero.svg);
     background-repeat: no-repeat;
     background-position: cover;
+    justify-content: center;
     height: 900px;
     width: 100%;
 }
 
 .header__text {
+    position: absolute;
     display: inline-block;
-    width: 400px;
-    height: 100px;
+    margin: 4em auto 4em auto;
+    width: 60%;
+}
+
+@media only screen and (min-width: 992px) {
+    .header {
+        display: inline-block;
+    }
+
+    .header__text {
+        margin-top: 6em;
+        margin-left: 6em;
+        width: 400px;
+        height: 100px;
+    }
 }

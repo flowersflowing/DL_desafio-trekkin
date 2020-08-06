@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b96bf74166.js" crossorigin="anonymous"></script>
     <!-- Font families -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- My stylesheet -->
@@ -12,11 +14,15 @@
 
 </head>
 <body>
-    <!-- navigation / falta el toggle wrap-->
-    <nav class="navbar">
-        <object data="images/Logo.svg" type="images/svg+xml">
+    <!-- navigation con sandwich-->
+    <nav class="navbar row">
+        <object data="images/Logo.svg" type="images/svg+xml" class="logo">
             <img src="images/Logo.svg" alt="logo">            
         </object>
+        <div class="collapsible">
+            <input type="checkbox" name='menu' id="menu">
+            <label for="menu"><i class="fas fa-bars fa-2x"></i></label>
+        </div>
         <div class="navbar__elements">
             <div class="navbar__elements--left">
                 <ul class="navbar__ul">
@@ -33,7 +39,7 @@
             </div>
         </div>
     </nav>
-    <!-- main con sections y articles-->
+    <!-- main con header sections y articles en grillas-->
     <main class="main">
         <header class="header">
             <div class="header__text">
@@ -43,53 +49,59 @@
         </header>
         <section class="caracteristicas">
             <h3 id="caracteristicas__title">Características</h3>
-            <object data="images/bar-graph.svg" type="image/svg+xml" class="svg__graph">
-                <img src="images/bar-graph.svg" alt="gráfico">            
-            </object>
-            <div class="caracteristicas__text">
-                <h4>Estadísticas de tu progreso</h4>                
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident officia? Quam magni hic fugiat distinctio eos libero cum recusandae? Cumque et repellat eum eos numquam eligendi nostrum harum corrupti!</h5>                
+            <div class="container caracteristicas__boxes row">
+                <div class="col-xxs-12 col-md-6">
+                    <object data="images/bar-graph.svg" type="image/svg+xml" class="svg__graph svg__animation">
+                        <img src="images/bar-graph.svg" alt="gráfico">            
+                    </object>                
+                </div>
+                <div class="caracteristicas__text col-xxs-12 col-md-6">
+                    <h4>Estadísticas de tu progreso</h4>                
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident officia? Quam magni hic fugiat distinctio eos libero cum recusandae? Cumque et repellat eum eos numquam eligendi nostrum harum corrupti!</h5>                
+                </div>
             </div>
         </section>
         <section class="precios">
             <h3 id="precios__title">Precios</h3>
             <div class="container">
-                <article class="container__card container__card--left">
-                    <h4>Trekk-in Free</h4>
-                    <h2>$ 0 / mes</h2>
-                    <hr>
-                    <ul>
-                        <li>Ver mapas creado por usuarios</li>
-                        <li>Conectar con otros usuarios</li>
-                    </ul>
-                    <hr>
-                    <button class="button precios__button">Obtén Free</button>
-                </article>
-                <article class="container__card container__card--right">
-                    <h4>Trekk-in Free</h4>
-                    <h2>$ 0 / mes</h2>
-                    <hr>
-                    <ul>
-                        <li>Ver mapas creado por usuarios</li>
-                        <li>Conectar con otros usuarios</li>
-                        <li>Definir mejores rutas</li>
-                        <li>Mapas Offline</li>
-                        <li>Integración con otras aplicaciones</li>
-                    </ul>
-                    <hr>
-                    <button class="button precios__button">Obtén Premium</button>                    
-                </article>                
+                <div class="row">
+                    <article class="container__card container__card--left col-xxs-12 col-sm-6">
+                        <h4>Trekk-in Free</h4>
+                        <h3>$0/mes</h3>
+                        <hr>
+                        <ul>
+                            <li>Ver mapas creado por usuarios</li>
+                            <li>Conectar con otros usuarios</li>
+                        </ul>
+                        <hr>
+                        <button class="button precios__button">Obtén Free</button>
+                    </article>
+                    <article class="container__card container__card--right col-xxs-12 col-sm-6">
+                        <h4>Trekk-in Free</h4>
+                        <h3>$3500/mes</h3>
+                        <hr>
+                        <ul>
+                            <li>Ver mapas creado por usuarios</li>
+                            <li>Conectar con otros usuarios</li>
+                            <li>Definir mejores rutas</li>
+                            <li>Mapas Offline</li>
+                            <li>Integración con otras aplicaciones</li>
+                        </ul>
+                        <hr>
+                        <button class="button precios__button">Obtén Premium</button>                    
+                    </article> 
+                </div>
             </div>
         </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
-        <div class="footer__elements--left">
+    <footer class="footer row">
+        <div class="footer__elements--left col-xxs-12 col-sm-6">
             <h6 class="footer__elements">Legal</h6>
             <h6 class="footer__elements">Cookies</h6>
             <h6 class="footer__elements">Sobre anuncios</h6>            
         </div>
-        <div class="footer__elements--right">
+        <div class="footer__elements--right col-xxs-12 col-sm-6">
             <h6 class="footer__elements">2018 Trekk-in SPA.</h6>
         </div>
     </footer>
